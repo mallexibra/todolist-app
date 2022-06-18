@@ -57,7 +57,7 @@ main{
 }
 
 #user{
-	flex-basis: 80%;
+	width:80%;
 	height: 70%;
 	padding: 7px;
 	box-sizing: border-box;
@@ -118,6 +118,7 @@ input#user:focus {
 	padding: 10px;
 	font-weight: 500;
 	cursor: pointer;
+	overflow-wrap: break-word;
 }
 
 .noted{
@@ -151,4 +152,32 @@ footer p a{
 	text-decoration: none;
 	color: white;
 	font-weight: 500;
+}
+
+/* Responsif Website */
+@media screen and (max-width: 530px){
+	header{
+		line-height: 20px;
+	}
+
+	header h1{
+		font-size: 20px;
+	}
+
+	header p{
+		font-size: 12px;
+	}
+
+	.content ul li{
+		font-size: 11px;
+		width: 90%;
+	}
+
+	.noted p{
+		font-size: 10px;
+	}
+
+	footer p{
+		font-size: 9px;
+	}
 }
